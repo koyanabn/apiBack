@@ -20,7 +20,7 @@ app.use(cors()); //t is used to send request to the server before the actual req
   "optionsSuccessStatus": 204
 } */
 
-app.get('/koyana', (req, res) => { //a route to fetch data
+app.get('/api/koyana', (req, res) => { //a route to fetch data
   res.json(data); //to send the 'data' on server
 });
 
