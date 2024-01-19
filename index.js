@@ -5,10 +5,14 @@ const cors = require('cors'); //supports secure cross-origin requests and data t
 const app = express(); //express instance to handle request and response
 const port = 5000;
 
+//to add the data for pie chart
+const xArray = ["User1", "User2", "User3", "User4", "User5"];
+const yArray = [55, 49, 44, 24, 15];
 // Sample data to show on the server
 const data = [
-  { id: 1, name: 'user1' },
-  { id: 2, name: 'user2' },
+  // { id: 1, name: 'user1' },
+  // { id: 2, name: 'user2' },
+  {labels:xArray, values:yArray}
 ];
 app.use(cors()); //t is used to send request to the server before the actual request is sent
 //in order to ask which origin and which request options the server accepts
